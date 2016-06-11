@@ -2,7 +2,7 @@
   "name": "webpack-react-compiler-plugin",
   "version": "0.0.1",
   "description": "Isomorphic static sites using React and webpack",
-  "main": "index.js",
+  "main": "plugin.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -20,5 +20,13 @@
   "bugs": {
     "url": "https://github.com/amiuhle/webpack-react-compiler-plugin/issues"
   },
-  "homepage": "https://github.com/amiuhle/webpack-react-compiler-plugin#readme"
+  "homepage": "https://github.com/amiuhle/webpack-react-compiler-plugin#readme",
+  "dependencies": {
+    "react": "^15.1.0",
+    "react-dom": "^15.1.0"
+  },
+  "devDependencies": {
+    "standard": "^7.1.2",
+    "webpack": "^1.13.1"
+  }
 }
