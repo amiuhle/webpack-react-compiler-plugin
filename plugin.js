@@ -19,15 +19,20 @@ class ReactCompilerPlugin {
           if (pages.hasOwnProperty(route)) {
             const Page = pages[route]
 
-            const Layout = Page.layoutProps.layout
+            const layoutProps = Page.layoutProps || {}
+            const Layout = layoutProps.layout
 
             let page = React.createElement(Page)
+            let doctype = '<!doctype html>'
 
             if (Layout) {
               page = React.createElement(Layout, Page.layoutProps, page)
+              if (Layout.doctype) {
+                doctype = Layout.doctype
+              }
             }
 
-            const content = ReactDOMServer.renderToString(page)
+            const content = doctype + ReactDOMServer.renderToString(page)
 
             if (route === 'default') {
               route = 'index'
