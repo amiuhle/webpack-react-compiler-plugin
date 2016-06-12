@@ -3,7 +3,7 @@ const ReactDOM = require('react-dom')
 
 const isClient = typeof document !== 'undefined'
 
-export class ClientOnly extends React.Component {
+class ClientOnly extends React.Component {
 
   constructor () {
     super()
@@ -30,7 +30,7 @@ export class ClientOnly extends React.Component {
   }
 }
 
-export default (routes) => {
+const connect = (routes) => {
   if (isClient) {
     // We're on the client
     let route = document.location.pathname.match(/^\/(.*?)(?:\.html)?$/)[1]
@@ -50,3 +50,7 @@ export default (routes) => {
     ReactDOM.render(page, document)
   }
 }
+
+connect.ClientOnly = ClientOnly
+
+module.exports = connect

@@ -12,7 +12,8 @@ class ReactCompilerPlugin {
       const assets = compilation.assets
 
       try {
-        const pages = eval(assets['bundle.js'].source())
+        const source = assets['bundle.js'].source()
+        const pages = eval(source)
 
         for (let route in pages) {
           if (pages.hasOwnProperty(route)) {
