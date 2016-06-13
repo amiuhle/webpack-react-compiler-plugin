@@ -1,7 +1,7 @@
 React webpack compiler plugin for webpack
 =========================================
 
-:exclamation:  *This package is currently under active development. Please give feedback by creating an  [Issue](https://github.com/amiuhle/webpack-react-compiler-plugin/issues/new), a [Pull   Request](https://github.com/amiuhle/webpack-react-compiler-plugin/compare)! or justjust discuss this on [Reddit](https://www.reddit.com/r/reactjs/comments/4ny3fv/rfc_my_approach_at_isomorphic_static_sites_using/)!*
+:exclamation:  *This package is currently under active development. Please give feedback by creating an  [Issue](https://github.com/amiuhle/webpack-react-compiler-plugin/issues/new), a [Pull   Request](https://github.com/amiuhle/webpack-react-compiler-plugin/compare)! or just discuss this on [Reddit](https://www.reddit.com/r/reactjs/comments/4ny3fv/rfc_my_approach_at_isomorphic_static_sites_using/)!*
 
 Create isomorphic static sites using webpack and React.
 
