@@ -1,7 +1,7 @@
 React webpack compiler plugin for webpack
 =========================================
 
-:exclamation:  *This package is currently under active development. Please give feedback by creating an  [Issue](https://github.com/amiuhle/webpack-react-compiler-plugin/issues/new) or a [Pull Request](https://github.com/amiuhle/webpack-react-compiler-plugin/compare)!*
+:exclamation:  *This package is currently under active development. Please give feedback by creating an  [Issue](https://github.com/amiuhle/webpack-react-compiler-plugin/issues/new), a [Pull   Request](https://github.com/amiuhle/webpack-react-compiler-plugin/compare)! or justjust discuss this on [Reddit](https://www.reddit.com/r/reactjs/comments/4ny3fv/rfc_my_approach_at_isomorphic_static_sites_using/)!*
 
 Create isomorphic static sites using webpack and React.
 
@@ -61,9 +61,12 @@ connect(routes)
 
 Also have a look at [example](example) for a minimal setup.
 
-
-
 Caveats
 -------
 
 * If you want to have styles, you currently have to create a CSS file using [`extract-text-webpack-plugin`](https://github.com/webpack/extract-text-webpack-plugin)
+
+Roadmap
+-------
+
+* [ ] Some kind of jekyll-like markdown support
